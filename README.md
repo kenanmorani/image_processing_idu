@@ -6,4 +6,4 @@
 5. The code is considered in two stages: 
    . The first stage is slicing the image and the mask and saving it. The paths in the code are refering to my Google Drive.
    . The second stage is training on the resulting slices using the 2D-UNET model. The paths of the slices in the second stage were adjusted as in the code before starting this stage.
-6. The image used during training can be found in this resporatory under data/volume.1.nii.gz and has to be exctracted first. On the other hand, the mask used for the training, which is the mask for the same image, can be found in this resporatory under data/volume/mask.1.nii.gz.
+6. The image used during training can be found in this resporatory under data/volume/1.nii.gz and has to be exctracted first. On the other hand, the mask used for the training, which is the mask for the same image, can be found in this resporatory under data/volume/mask/1.nii.gz. (THe path in the code are different).
