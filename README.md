@@ -11,7 +11,7 @@
 
 # 3d_image_segmentation_on_10240_slices.ipynb :
 * The same algorith as the '3d_image_segmentation.ipynb', However, training batch size is different between the two codes.
-On the other hand the '3d_image_segmentation_on_10240_slices.ipynb' code indicates training the 2D UNet model on bigger dataset. THe dataset consists of 10 training CT images and 10 COVID-19 'infection masks'. The 10 CT scans are from the Coronacases Initiative that can be freely downloaded from https://zenodo.org/record/3757476#.YIa6cJAzbIV.
+On the other hand the '3d_image_segmentation_on_10240_slices.ipynb' code indicates training the 2D UNet model on bigger dataset. The dataset consists of 10 training CT images and 10 COVID-19 'infection masks'. The 10 CT scans are from the Coronacases Initiative that can be freely downloaded from https://zenodo.org/record/3757476#.YIa6cJAzbIV.
 
 * The images in this code are kept in iin.gz format while working with the code, as this types of files are way smaller in size comparing to .iin.
 
