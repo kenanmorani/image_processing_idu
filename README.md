@@ -17,3 +17,12 @@ On the other hand the '3d_image_segmentation_on_10240_slices.ipynb' code indicat
 
 # 3d_image_segmentation_on_10240_slices_1epoch.ipynb
 The model showed great accuracy performance and was trained on one epoch in this code and then saved for testing purposes.
+
+# 3d_image_segmentation_Train_and_test_1_epoch.ipynb
+The model is trained on 16 images and masks and test on the other four. The model of 64 batch siz and epoch step are number of train / test devided by the batch size of the train / test. The model ran on one training epoch. The quantitative test of the model shows that the model have not yet learned to detect the masks at all. The model had difficulty to be trained on google colab as it was computationally expensive to run more epochs.
+
+# 3d_image_segmentation_Train_and_test_batch64_2epochs.ipynb
+The model is then trained on 64 batch sizes but epoch steps were different; train epoch step = (number of trained data devided by the train batch size) / 2. The same went for the test epoch step. Model was trained for two epochs. Quantitative test results through IoU showed slight improvement.
+
+# 3d_image_segmentation_Train_and_test_batch64_2then2epochs_ckpt2.ipynb
+The previous model continues to be trained on extra 2 epoches. New trained model was called model_ckpt2. The quantifying testing results show more improvement.
