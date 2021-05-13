@@ -2,7 +2,7 @@
 * The resporatory is a 3D image segmentation projects of images and masks at http://medicalsegmentation.com/covid19/, but big portion of the work was transfered to the images and infection masks at https://zenodo.org/record/3757476#.YIa6cJAzbIV as found more well annotated while doing the coding.
 * Below all the stages of the model training through the uplaoded files in the resporatory are explained.
 # THE CODES
-# 3d_image_segmentation.ipynb :
+## 3d_image_segmentation.ipynb :
 1. The code is a project for the subject called 'Image Processing' taken at Izmir Democracy University, Electrical and Eelctronics Department.
 2. The code is for 3D-CT image segmentation task, training a model through slicing 3D images in X and Y directions and applying 2D-UNET model on the resulting slices. NUmber of slices is 10240.
 3. Images and maskes are obtained from http://medicalsegmentation.com/covid19/, Segmentation dataset nr. 2 (13th April). Only the first image and the first mask were used for training, the rest, 8 in each category, were discarded.
