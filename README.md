@@ -1,9 +1,6 @@
 # INTRODUCTION
 * The resporatory is a 3D image segmentation projects of images and masks at http://medicalsegmentation.com/covid19/, but big portion of the work was transfered to the images and infection masks at https://zenodo.org/record/3757476#.YIa6cJAzbIV as found more well annotated while doing the coding.
-* Below all the stages of the model training through the uplaoded files in the resporatory are explained:
-
-
-
+* Below all the stages of the model training through the uplaoded files in the resporatory are explained: \n
 
 # 3d_image_segmentation.ipynb :
 1. The code is a project for the subject called 'Image Processing' taken at Izmir Democracy University, Electrical and Eelctronics Department.
