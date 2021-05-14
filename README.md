@@ -33,3 +33,6 @@ The previous model continues to be trained on extra 2 epoches. New trained model
 
 ### 3d_image_segmentation_Train_and_test_batch64_2then2then2then2epochs.ipynb
 The same model continued to be trained on 8 epochs in total. Model saved is 'model_ckpt4'
+
+### 3d_image_segmentation_Train_and_test_batch64_10epochs_augmentation.ipynb
+The same model continued to be trained on 8 epochs in total. Model saved is 'model_ckpt5'. Augmentation was checked for the the last two running epochs in this model.
