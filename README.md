@@ -41,7 +41,7 @@ The same model continued to be trained on 8 epochs in total. Model saved is 'mod
 The model trained on 10 epochs was tested and IoU for lesion detection was printed out for 32 masks.
 
 ### 3d_image_segmentation_Train_and_test_batch64_10epochs_augmentation_IoU_lossfunction.ipynb
-The model was trained to optimize the IoU/ Jaccard metrics as a loss function starting from 8 epoch of the previous models. Quantitative results during 2 epochs of training are shown.
+The model was trained to optimize the IoU/ Jaccard metrics as a loss function starting from 8 epoch of the previous models. Quantitative results during 2 epochs of training are shown. The model is trained over 10 epochs
 
 ### 3d_image_segmentation_Train_and_test_batch64_12epochs_augmentation_IoU_lossfunction.ipynb
 The model trained and saved 12epochs using IoU loss function.
