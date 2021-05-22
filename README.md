@@ -1,6 +1,6 @@
 ## INTRODUCTION
 * The resporatory is a 3D image segmentation project that started with images and masks at http://medicalsegmentation.com/covid19/. Then as those images and masks were found to be corrupted while slicing. Therefore, images and infection masks at https://zenodo.org/record/3757476#.YIa6cJAzbIV were used and found well annotated.
-* All the codes of the work stages of using a 2DUNET model to train volumetric medical images through slicing were explained.
+* All the codes of using a 2DUNET model to train volumetric medical images through slicing are explained below in order.
 ## THE CODES
 ### 3d_image_segmentation.ipynb :
 1. The code is a project for the subject called 'Image Processing' taken at Izmir Democracy University, Electrical and Eelctronics Department.
