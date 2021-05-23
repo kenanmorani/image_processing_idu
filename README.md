@@ -35,7 +35,7 @@ The previous model continues to be trained on extra 2 epoches. New trained model
 The same model continued to be trained on 8 epochs in total. Model saved is 'model_ckpt4'
 
 ### 3d_image_segmentation_Train_and_test_batch64_10epochs_augmentation.ipynb
-The same model continued to be trained on 8 epochs in total. Model saved is 'model_ckpt5'. Augmentation was checked for the the last two running epochs in this model.
+The same model continued to be trained on 8 epochs in total. Model saved is 'model_ckpt5'. Augmentation was implemented for the the last two running epochs in this model.
 
 ### 3d_image_segmentation_Train_and_test_batch64_10epochs_augmentation_IoU.ipynb
 The model trained on 10 epochs was tested and IoU for lesion detection was printed out for 32 masks.
