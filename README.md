@@ -4,7 +4,7 @@
 ## THE CODES
 ### 3d_image_segmentation.ipynb :
 1. The code is a project for the subject called 'Image Processing' taken at Izmir Democracy University, Electrical and Eelctronics Department.
-2. The code is for 3D-CT image segmentation task, training a model through slicing 3D images in X and Y and even Z directions and applying 2D-UNET model on the resulting slices. Number of slices is 10240 and more.
+2. The code is for 3D-CT image segmentation task, training a model through slicing 3D images in X and Y directions and applying 2D-UNET model on the resulting slices. Number of slices is 10240
 3. Images and maskes are obtained from http://medicalsegmentation.com/covid19/, Segmentation dataset nr. 2 (13th April). Only the first image and the first mask were used for training, the rest, 8 in each category, were discarded.
 4. Validation of the model is to be done later on CT images.
 5. The code is considered in two stages:                                                                                                                            
@@ -23,7 +23,7 @@ On the other hand the '3d_image_segmentation_on_10240_slices.ipynb' code indicat
 The model showed great accuracy performance and was trained on one epoch in this code and then saved for testing purposes.
 
 ### 3d_image_segmentation_Train_and_test_1_epoch.ipynb
-The model is trained on 16 images and masks and test on the other four. The model of 64 batch siz and epoch step are number of train / test devided by the batch size of the train / test. The model ran on one training epoch. The quantitative test of the model shows that the model have not yet learned to detect the masks at all. The model had difficulty to be trained on google colab as it was computationally expensive to run more epochs.
+The model is trained on 16 images and masks and test on the other four. The model of 64 batch siz and epoch step are number of train / test devided by the batch size of the train / test. The model ran on one training epoch. The slicing of images and masks were in all X, Y, and Z directions from here onwards. The quantitative test of the model shows that the model have not yet learned to detect the masks at all. The model had difficulty to be trained on google colab as it was computationally expensive to run more epochs.
 
 ### 3d_image_segmentation_Train_and_test_batch64_2epochs.ipynb
 The model is then trained on 64 batch sizes but epoch steps were different; train epoch step = (number of trained data devided by the train batch size) / 2. The same went for the test epoch step. Model was trained for two epochs. Quantitative test results through IoU showed slight improvement.
