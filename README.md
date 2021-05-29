@@ -5,7 +5,7 @@
 ### 3d_image_segmentation.ipynb :
 1. The code is a project for the subject called 'Image Processing' taken at Izmir Democracy University, Electrical and Eelctronics Department.
 2. The code is for 3D-CT image segmentation task, training a model through slicing 3D images in X and Y directions and applying 2D-UNET model on the resulting slices. Number of slices is 10240
-3. Images and maskes are obtained from http://medicalsegmentation.com/covid19/, Segmentation dataset nr. 2 (13th April). To build the model on a smaller dataset firstly, only the first image and the first mask were used for training, the rest, 8 in each category, were discarded.
+3. Images and maskes are obtained from http://medicalsegmentation.com/covid19/, Segmentation dataset nr. 2 (13th April). To build the model on a smaller dataset, only the first image and the first mask were used for training. The rest of the images, 8 in each category, were discarded.
 4. Validation of the model is to be done later on CT images.
 5. The code is considered in two stages:                                                                                                                            
    a . The first stage is slicing the image and the mask and saving it. The paths in the code are refering to my Google Drive.                                     
