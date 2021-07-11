@@ -12,33 +12,42 @@
 4. The image used during training can be found in this resporatory under data/volume/1.nii.gz. They have to be exctracted first. On the other hand, the mask used for the training, which is the mask for the same image, can be found in this resporatory under data/volume/mask/1.nii.gz. 
 
 ### 3d_image_segmentation_on_10240_slices.ipynb :
-* The same algorith as the '3d_image_segmentation.ipynb', However, training batch size is different between the two codes.
-On the other hand the '3d_image_segmentation_on_10240_slices.ipynb' code indicates training the 2D UNet model on bigger dataset. The dataset consists of 10 training CT images and 10 COVID-19 'infection masks'. The 10 CT scans are from the Coronacases Initiative that can be freely downloaded from https://zenodo.org/record/3757476#.YIa6cJAzbIV.
-
+* Similar to the algorithm above is applied in this code. However, training batch size is adjusted at this stage. Further more, the code'3d_image_segmentation_on_10240_slices.ipynb' code includes training the 2D UNet model on a bigger dataset. 
+* The dataset consists of 10 training CT images and 10 COVID-19 'infection masks'. The 10 CT scans are from the Coronacases Initiative that can be freely downloaded from https://zenodo.org/record/3757476#.YIa6cJAzbIV.
 * The images in this code are kept in iin.gz format while working with the code, as this types of files are way smaller in size comparing to .iin.
 
 ### 3d_image_segmentation_on_10240_slices_1epoch.ipynb
-The model showed great accuracy performance and was trained on one epoch in this code and then saved for testing purposes.
+* The model showed great accuracy performance, The model was trained on one epoch.
 
 ### 3d_image_segmentation_Train_and_test_1_epoch.ipynb
-The model is trained on 16 images and masks and test on the other four. The model of 64 batch siz and epoch step are number of train / test devided by the batch size of the train / test. The model ran on one training epoch. The slicing of images and masks were in all X, Y, and Z directions from here onwards. The quantitative test of the model shows that the model have not yet learned to detect the masks at all. The number of training and tseting images and masks increased.
+* At this stage, the slicing of images and masks were in all X, Y, and Z directions. And this three dimentional slicing applies to all the folowwing codes.
+* The same model was trained on even larger dataset. The model is trained on 16 images and masks and test on the other four. 
+* Batch size is equal to 64 and the epoch step for training is number of training devided by the batch size of 64 and epoch step for tessting is the number of testing divided by the batch size of 64. 
+* The model was trained over one epoch.
+* The quantitative results indicate that the model have not yet learned to detect the lesion at all actually given that the number of epochs is atill just one.
+
 ### 3d_image_segmentation_Train_and_test_batch64_2epochs.ipynb
-The model is then trained on 64 batch sizes but epoch steps were different; train epoch step = (number of trained data devided by the train batch size) / 2. The same went for the test epoch step. Model was trained for two epochs. Quantitative test results through IoU showed slight improvement.
+* Model was trained for two epochs. Quantitative test results, the Intersection over Union IoU, showed slight improvement.
+* The model is trained on 64 batch size but epoch steps were different; train epoch step = (number of trained data devided by the train batch size) / 2. The same went for the test epoch step. 
 
 ### 3d_image_segmentation_Train_and_test_batch64_2then2epochs_ckpt2.ipynb
-The previous model continues to be trained on extra 2 epoches. New trained model was called model_ckpt2. The quantifying testing results show more improvement.
+* The previous model continues to be trained on 2 more epoches. New trained model was called model_ckpt2. 
+* The quantifying testing results showed more improvement.
 
 ### 3d_image_segmentation_Train_and_test_batch64_2then2then2then2epochs.ipynb
-The same model continued to be trained on 8 epochs in total. Model saved is 'model_ckpt4'
+* The same model continued to be trained on 8 epochs in total. Model is saved under the name 'model_ckpt4'
 
 ### 3d_image_segmentation_Train_and_test_batch64_10epochs_augmentation.ipynb
-The same model continued to be trained on 8 epochs in total. Model saved is 'model_ckpt5'. Augmentation was implemented for the the last two running epochs in this model.
+* The same model continued to be trained on 8 epochs in total. 
+* Model is saved under name 'model_ckpt5'. 
+* At this stage augmentation of the images was implemented.
 
 ### 3d_image_segmentation_Train_and_test_batch64_10epochs_augmentation_IoU.ipynb
-The model trained on 10 epochs was tested and IoU for lesion detection was printed out for 32 testing masks.
-testing 
+* The model trained on 10 epochs was tested and IoU for lesion detection was printed out for 32 testing masks.
+
 ### 3d_image_segmentation_Train_and_test_batch64_10epochs_augmentation_IoU_lossfunction.ipynb
-The model was trained to optimize the IoU/ Jaccard metrics as a loss function starting from 8 epoch of the previous models. Quantitative results during 2 epochs of training are shown. The model is trained over 10 epochs
+* At this stage, the model started to be trained for optimizion of the IoU/ Jaccard metrics. The IoU matrix was made to be the loss function. 
+* Quantitative results are shown. 
 
 ### 3d_image_segmentation_Train_and_test_batch64_12epochs_augmentation_IoU_lossfunction.ipynb
-The model trained and saved 12epochs using IoU loss function.
+The model is simple trained and saved at this stage.
