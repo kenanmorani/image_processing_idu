@@ -4,15 +4,12 @@
 * The training happened in different stages responding to the results. Trying different publicly available datasets first and with different training data sizes. On the other hand, hayperparameters were changed to suit the tasks in progress and build the deep learning model using 2DUNET.
 ## THE CODES
 ### 3d_image_segmentation.ipynb :
-1. The code is a project for the subject called 'Image Processing' taken at Izmir Democracy University, Electrical and Eelctronics Department.
-2. The code is for 3D-CT image segmentation task, training a model through slicing 3D images in X and Y directions and applying 2D-UNET model on the resulting slices. Number of slices is 10240
-3. Images and maskes are obtained from http://medicalsegmentation.com/covid19/, Segmentation dataset nr. 2 (13th April). To build the model on a smaller dataset, only the first image and the first mask were used for training. The rest of the images, 8 in each category, were discarded.
-4. Validation of the model is to be done later on CT images.
-5. The code is considered in two stages:                                                                                                                            
+1. The code is for 3D-CT image segmentation task, training a model through slicing 3D images in X and Y directions and applying 2D-UNET model on the resulting slices. Number of slices is 10240 for each image.
+2. Images and maskes are obtained from http://medicalsegmentation.com/covid19/, Segmentation dataset nr. 2 (13th April). First small data was trained, in that only the first image and the first mask were used for training a 2DUNET model. The rest of the images, 8 in each category, were discarded.
+3. The code is considered in two stages; slicong the 3D images and training a 2DUNET model:                                                                                       
    a . The first stage is slicing the image and the mask and saving it. The paths in the code are refering to my Google Drive.                                     
-   b . The second stage is training on the resulting slices using the 2D-UNET model. The paths of the slices in the second stage were adjusted before starting this stage. The paths can be checked and edited in the code.                                                  
-6. The image used during training can be found in this resporatory under data/volume/1.nii.gz and has to be exctracted first. On the other hand, the mask used for the training, which is the mask for the same image, can be found in this resporatory under data/volume/mask/1.nii.gz. (The paths in the code are different and don't refere to my github).
-
+   b . The second stage is training a 2D-UNET model. The paths of the slices in the second stage were adjusted before starting this stage.
+4. The image used during training can be found in this resporatory under data/volume/1.nii.gz. They have to be exctracted first. On the other hand, the mask used for the training, which is the mask for the same image, can be found in this resporatory under data/volume/mask/1.nii.gz. 
 
 ### 3d_image_segmentation_on_10240_slices.ipynb :
 * The same algorith as the '3d_image_segmentation.ipynb', However, training batch size is different between the two codes.
