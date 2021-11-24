@@ -50,4 +50,4 @@
 * Quantitative results are shown. 
 
 ### 3d_image_segmentation_Train_and_test_batch64_12epochs_augmentation_IoU_lossfunction.ipynb
-The model is simple trained and saved at this stage.
+The model is trained and saved at this stage.
