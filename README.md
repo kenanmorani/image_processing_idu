@@ -51,3 +51,6 @@
 
 ### 3d_image_segmentation_Train_and_test_batch64_12epochs_augmentation_IoU_lossfunction.ipynb
 The model is trained and saved at this stage.
+
+### REFERENCES:
+https://github.com/madsendennis {Last Access 16.08.2021}
