@@ -17,7 +17,7 @@
 * The images in this code are kept in iin.gz format while working with the code, as this types of files are way smaller in size comparing to .iin.
 
 ### 3d_image_segmentation_on_10240_slices_1epoch.ipynb
-* The model showed great accuracy performance, The model was trained on one epoch.
+* The model was trained on one epoch.
 
 ### 3d_image_segmentation_Train_and_test_1_epoch.ipynb
 * At this stage, the slicing of images and masks were in all X, Y, and Z directions. And this three dimentional slicing applies to all the folowwing codes.
